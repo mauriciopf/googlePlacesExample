@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35A57B4E64CC040997DD8F3B /* Pods_hellogenioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C874E6BF9562A8699D18362 /* Pods_hellogenioTests.framework */; };
+		3D57766ABCF3F0E9CC0C92A5 /* Pods_hellogenio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4F2ED8DB3BCC9B7C082875 /* Pods_hellogenio.framework */; };
+		803A85FC82517D559277CF81 /* Pods_hellogenioUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC03B763FF1DC3C61EF07C8 /* Pods_hellogenioUITests.framework */; };
 		8D07AADB1FBE1687009CD0A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D07AADA1FBE1687009CD0A1 /* AppDelegate.swift */; };
-		8D07AADD1FBE1687009CD0A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D07AADC1FBE1687009CD0A1 /* ViewController.swift */; };
-		8D07AAE01FBE1687009CD0A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D07AADE1FBE1687009CD0A1 /* Main.storyboard */; };
+		8D07AADD1FBE1687009CD0A1 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D07AADC1FBE1687009CD0A1 /* MapVC.swift */; };
 		8D07AAE21FBE1687009CD0A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D07AAE11FBE1687009CD0A1 /* Assets.xcassets */; };
 		8D07AAE51FBE1687009CD0A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D07AAE31FBE1687009CD0A1 /* LaunchScreen.storyboard */; };
 		8D07AAF01FBE1687009CD0A1 /* hellogenioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D07AAEF1FBE1687009CD0A1 /* hellogenioTests.swift */; };
 		8D07AAFB1FBE1687009CD0A1 /* hellogenioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D07AAFA1FBE1687009CD0A1 /* hellogenioUITests.swift */; };
+		8D627F481FBE55E800015383 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D627F471FBE55E800015383 /* HomeVC.swift */; };
+		8D627F4A1FBE567000015383 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D627F491FBE567000015383 /* HomeTableViewCell.swift */; };
+		8D627F4C1FBF37F100015383 /* MapVCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D627F4B1FBF37F100015383 /* MapVCTableViewCell.swift */; };
+		8D627F4E1FBF385400015383 /* DetailMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D627F4D1FBF385400015383 /* DetailMapVC.swift */; };
+		8D945FC21FBE16F7002AA252 /* WebServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D945FC11FBE16F7002AA252 /* WebServiceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +41,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AAC6139029B3FDD0EBF9795 /* Pods-hellogenio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hellogenio.release.xcconfig"; path = "Pods/Target Support Files/Pods-hellogenio/Pods-hellogenio.release.xcconfig"; sourceTree = "<group>"; };
+		410A7B41C072EEC4E1188C2C /* Pods-hellogenioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hellogenioTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hellogenioTests/Pods-hellogenioTests.debug.xcconfig"; sourceTree = "<group>"; };
+		61869029AF9E5B6E861670FE /* Pods-hellogenioUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hellogenioUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-hellogenioUITests/Pods-hellogenioUITests.release.xcconfig"; sourceTree = "<group>"; };
+		65150E406B46411E98F7035D /* Pods-hellogenio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hellogenio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hellogenio/Pods-hellogenio.debug.xcconfig"; sourceTree = "<group>"; };
+		7A4F2ED8DB3BCC9B7C082875 /* Pods_hellogenio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hellogenio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C874E6BF9562A8699D18362 /* Pods_hellogenioTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hellogenioTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D07AAD71FBE1687009CD0A1 /* hellogenio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hellogenio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D07AADA1FBE1687009CD0A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8D07AADC1FBE1687009CD0A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8D07AADF1FBE1687009CD0A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8D07AADC1FBE1687009CD0A1 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		8D07AAE11FBE1687009CD0A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D07AAE41FBE1687009CD0A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D07AAE61FBE1687009CD0A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +59,14 @@
 		8D07AAF61FBE1687009CD0A1 /* hellogenioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hellogenioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D07AAFA1FBE1687009CD0A1 /* hellogenioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hellogenioUITests.swift; sourceTree = "<group>"; };
 		8D07AAFC1FBE1687009CD0A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D627F471FBE55E800015383 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		8D627F491FBE567000015383 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		8D627F4B1FBF37F100015383 /* MapVCTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVCTableViewCell.swift; sourceTree = "<group>"; };
+		8D627F4D1FBF385400015383 /* DetailMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMapVC.swift; sourceTree = "<group>"; };
+		8D945FC11FBE16F7002AA252 /* WebServiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceController.swift; sourceTree = "<group>"; };
+		995715030CC6BF427C0849B5 /* Pods-hellogenioUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hellogenioUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hellogenioUITests/Pods-hellogenioUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A54E230998C26C2D82633BDC /* Pods-hellogenioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hellogenioTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-hellogenioTests/Pods-hellogenioTests.release.xcconfig"; sourceTree = "<group>"; };
+		DDC03B763FF1DC3C61EF07C8 /* Pods_hellogenioUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hellogenioUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D57766ABCF3F0E9CC0C92A5 /* Pods_hellogenio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35A57B4E64CC040997DD8F3B /* Pods_hellogenioTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +90,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				803A85FC82517D559277CF81 /* Pods_hellogenioUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		208EEF38C7EB536D76EF006A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A4F2ED8DB3BCC9B7C082875 /* Pods_hellogenio.framework */,
+				7C874E6BF9562A8699D18362 /* Pods_hellogenioTests.framework */,
+				DDC03B763FF1DC3C61EF07C8 /* Pods_hellogenioUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8D07AACE1FBE1686009CD0A1 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +114,8 @@
 				8D07AAEE1FBE1687009CD0A1 /* hellogenioTests */,
 				8D07AAF91FBE1687009CD0A1 /* hellogenioUITests */,
 				8D07AAD81FBE1687009CD0A1 /* Products */,
+				A303FCF3A54AAB9224E7140A /* Pods */,
+				208EEF38C7EB536D76EF006A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +132,9 @@
 		8D07AAD91FBE1687009CD0A1 /* hellogenio */ = {
 			isa = PBXGroup;
 			children = (
+				8D1330A11FBF4D5F007E1AFC /* Controller */,
+				8D1330A01FBF4D2F007E1AFC /* ViewControllers */,
 				8D07AADA1FBE1687009CD0A1 /* AppDelegate.swift */,
-				8D07AADC1FBE1687009CD0A1 /* ViewController.swift */,
-				8D07AADE1FBE1687009CD0A1 /* Main.storyboard */,
 				8D07AAE11FBE1687009CD0A1 /* Assets.xcassets */,
 				8D07AAE31FBE1687009CD0A1 /* LaunchScreen.storyboard */,
 				8D07AAE61FBE1687009CD0A1 /* Info.plist */,
@@ -125,6 +160,39 @@
 			path = hellogenioUITests;
 			sourceTree = "<group>";
 		};
+		8D1330A01FBF4D2F007E1AFC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D627F491FBE567000015383 /* HomeTableViewCell.swift */,
+				8D627F471FBE55E800015383 /* HomeVC.swift */,
+				8D07AADC1FBE1687009CD0A1 /* MapVC.swift */,
+				8D627F4D1FBF385400015383 /* DetailMapVC.swift */,
+				8D627F4B1FBF37F100015383 /* MapVCTableViewCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8D1330A11FBF4D5F007E1AFC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8D945FC11FBE16F7002AA252 /* WebServiceController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A303FCF3A54AAB9224E7140A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65150E406B46411E98F7035D /* Pods-hellogenio.debug.xcconfig */,
+				1AAC6139029B3FDD0EBF9795 /* Pods-hellogenio.release.xcconfig */,
+				410A7B41C072EEC4E1188C2C /* Pods-hellogenioTests.debug.xcconfig */,
+				A54E230998C26C2D82633BDC /* Pods-hellogenioTests.release.xcconfig */,
+				995715030CC6BF427C0849B5 /* Pods-hellogenioUITests.debug.xcconfig */,
+				61869029AF9E5B6E861670FE /* Pods-hellogenioUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +200,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D07AAFF1FBE1687009CD0A1 /* Build configuration list for PBXNativeTarget "hellogenio" */;
 			buildPhases = (
+				C281EEAB0EAFF70E25B941E4 /* [CP] Check Pods Manifest.lock */,
 				8D07AAD31FBE1687009CD0A1 /* Sources */,
 				8D07AAD41FBE1687009CD0A1 /* Frameworks */,
 				8D07AAD51FBE1687009CD0A1 /* Resources */,
+				DD55439CF53218AD00CAD41A /* [CP] Embed Pods Frameworks */,
+				7E26C5A082D5F400D64C3839 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +220,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D07AB021FBE1687009CD0A1 /* Build configuration list for PBXNativeTarget "hellogenioTests" */;
 			buildPhases = (
+				2816CE7B15F289662FB7F46C /* [CP] Check Pods Manifest.lock */,
 				8D07AAE71FBE1687009CD0A1 /* Sources */,
 				8D07AAE81FBE1687009CD0A1 /* Frameworks */,
 				8D07AAE91FBE1687009CD0A1 /* Resources */,
+				25C4544B28F6AC54B9B4CD00 /* [CP] Embed Pods Frameworks */,
+				B1F41DDA0AC15AE7A21026F1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +241,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D07AB051FBE1687009CD0A1 /* Build configuration list for PBXNativeTarget "hellogenioUITests" */;
 			buildPhases = (
+				CB39E9E2C7A4CFFF46CC68AD /* [CP] Check Pods Manifest.lock */,
 				8D07AAF21FBE1687009CD0A1 /* Sources */,
 				8D07AAF31FBE1687009CD0A1 /* Frameworks */,
 				8D07AAF41FBE1687009CD0A1 /* Resources */,
+				9762B986F8FC901724F3B16D /* [CP] Embed Pods Frameworks */,
+				527A6E6024446C5AEFC39E9F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,7 +311,6 @@
 			files = (
 				8D07AAE51FBE1687009CD0A1 /* LaunchScreen.storyboard in Resources */,
 				8D07AAE21FBE1687009CD0A1 /* Assets.xcassets in Resources */,
-				8D07AAE01FBE1687009CD0A1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +330,170 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		25C4544B28F6AC54B9B4CD00 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hellogenioTests/Pods-hellogenioTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2816CE7B15F289662FB7F46C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hellogenioTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		527A6E6024446C5AEFC39E9F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hellogenioUITests/Pods-hellogenioUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E26C5A082D5F400D64C3839 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-hellogenio/Pods-hellogenio-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hellogenio/Pods-hellogenio-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9762B986F8FC901724F3B16D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hellogenioUITests/Pods-hellogenioUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1F41DDA0AC15AE7A21026F1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hellogenioTests/Pods-hellogenioTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C281EEAB0EAFF70E25B941E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hellogenio-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB39E9E2C7A4CFFF46CC68AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hellogenioUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD55439CF53218AD00CAD41A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hellogenio/Pods-hellogenio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8D07AAD31FBE1687009CD0A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D07AADD1FBE1687009CD0A1 /* ViewController.swift in Sources */,
+				8D627F4E1FBF385400015383 /* DetailMapVC.swift in Sources */,
+				8D945FC21FBE16F7002AA252 /* WebServiceController.swift in Sources */,
+				8D627F4A1FBE567000015383 /* HomeTableViewCell.swift in Sources */,
+				8D627F481FBE55E800015383 /* HomeVC.swift in Sources */,
+				8D07AADD1FBE1687009CD0A1 /* MapVC.swift in Sources */,
 				8D07AADB1FBE1687009CD0A1 /* AppDelegate.swift in Sources */,
+				8D627F4C1FBF37F100015383 /* MapVCTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +529,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8D07AADE1FBE1687009CD0A1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8D07AADF1FBE1687009CD0A1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8D07AAE31FBE1687009CD0A1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -424,6 +649,7 @@
 		};
 		8D07AB001FBE1687009CD0A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65150E406B46411E98F7035D /* Pods-hellogenio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +664,7 @@
 		};
 		8D07AB011FBE1687009CD0A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AAC6139029B3FDD0EBF9795 /* Pods-hellogenio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +679,7 @@
 		};
 		8D07AB031FBE1687009CD0A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 410A7B41C072EEC4E1188C2C /* Pods-hellogenioTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +696,7 @@
 		};
 		8D07AB041FBE1687009CD0A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A54E230998C26C2D82633BDC /* Pods-hellogenioTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +713,7 @@
 		};
 		8D07AB061FBE1687009CD0A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 995715030CC6BF427C0849B5 /* Pods-hellogenioUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +729,7 @@
 		};
 		8D07AB071FBE1687009CD0A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61869029AF9E5B6E861670FE /* Pods-hellogenioUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

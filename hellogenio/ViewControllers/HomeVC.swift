@@ -13,10 +13,11 @@ class HomeVC: UIViewController {
     var tableView: UITableView!
     var photosArray = [WebServiceController.jsonArray]()
     static let identifier = "cell"
-    
+    var imageCache = NSCache<NSString, UIImage>()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title = "Home"
         view.backgroundColor = UIColor.white
         
         tableView = UITableView()
@@ -39,10 +40,14 @@ class HomeVC: UIViewController {
             }
         }
         
-
         // Do any additional setup after loading the view.
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.navigationController?.navigationBar.isHidden = false
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -72,23 +77,47 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: HomeVC.identifier, for: indexPath) as! HomeTableViewCell
+        let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
+        activityIndicator.startAnimating()
+        cell.contentView.addSubview(activityIndicator)
         let jsonElement = photosArray[indexPath.row]
         cell.typeOfCell = jsonElement.type
         let url = URL(string: jsonElement.image!)
-        print(jsonElement.image!)
+        
+        downloadImage(url: url!) { (image) in
 
-            let data = NSData(contentsOf: url!)! as Data
-        DispatchQueue.main.async {
-
-            let image = UIImage(data: data)
-            cell.imageView!.image = image
-
+            cell.myImageView.image = image
+            DispatchQueue.main.async {
+            activityIndicator.stopAnimating()
+            }
         }
-    
+        
         return cell
     }
     
+    func downloadImage(url: URL, completion: @escaping (UIImage?) -> Void) {
+    
+        if let cachedImage = imageCache.object(forKey: url.absoluteString as NSString) {
+            completion(cachedImage)
+        }  else {
+        
+        DispatchQueue.global(qos: .background).async {
+            let data = NSData(contentsOf: url)! as Data
+            
+            DispatchQueue.main.async {
+                if let image = UIImage(data: data) {
+                self.imageCache.setObject(image, forKey: url.absoluteString as NSString)
+               completion(image)
+                }
+            }
+        }
+        
+        }
+    }
+
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.navigationController?.pushViewController(MapVC(), animated: true)
+        
     }
 }

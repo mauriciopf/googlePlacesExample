@@ -11,22 +11,32 @@ import GooglePlacePicker
 
 class MapVC: UIViewController {
 
+    var isPresented = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = UIColor.white
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.navigationController?.navigationBar.isHidden = true
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         
-        view.backgroundColor = UIColor.white
+        if !isPresented {
+        isPresented = true
         let config = GMSPlacePickerConfig(viewport: nil)
         let pickerVC = GMSPlacePickerViewController(config: config)
         pickerVC.delegate = self
-        pickerVC.modalPresentationStyle = .fullScreen
-        self.present(pickerVC, animated: true, completion: nil)
 
+        pickerVC.modalPresentationStyle = .overFullScreen
+        self.present(pickerVC, animated: false, completion: nil)
+
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,7 +49,7 @@ class MapVC: UIViewController {
 
 extension MapVC: GMSPlacePickerViewControllerDelegate {
     func placePicker(_ viewController: GMSPlacePickerViewController, didPick place: GMSPlace) {
-        
+        isPresented = false
         let detailVC = DetailMapVC()
         detailVC.address = place.addressComponents
         detailVC.coordinate = place.coordinate
@@ -48,7 +58,8 @@ extension MapVC: GMSPlacePickerViewControllerDelegate {
 
     }
     
-    
-    
-    
+    func placePickerDidCancel(_ viewController: GMSPlacePickerViewController) {
+        self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
+    }
 }

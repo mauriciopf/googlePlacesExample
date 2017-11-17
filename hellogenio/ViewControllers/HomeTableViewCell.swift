@@ -34,29 +34,37 @@ class HomeTableViewCell: UITableViewCell {
     func updateLayout() {
         
         myImageView.translatesAutoresizingMaskIntoConstraints = false
-        myImageView.layer.cornerRadius = myImageView.frame.size.width / 2
-        myImageView.clipsToBounds = true
+       
 
         contentView.addSubview(myImageView)
 
-        if typeOfCell == "data_0" {
+        if typeOfCell == "data_1" {
             
             myImageView.centerYAnchor.constraint(equalTo: self.contentView.centerYAnchor).isActive = true
-            myImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 100).isActive = true
-            myImageView.widthAnchor.constraint(equalToConstant: 30).isActive = true
-            myImageView.heightAnchor.constraint(equalToConstant: 30).isActive = true
+            myImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 50).isActive = true
+            myImageView.widthAnchor.constraint(equalToConstant: 35).isActive = true
+            myImageView.heightAnchor.constraint(equalToConstant: 35).isActive = true
 
             
-        } else if typeOfCell == "data_1" {
+        } else if typeOfCell == "data_0" {
             
             myImageView.centerYAnchor.constraint(equalTo: self.contentView.centerYAnchor).isActive = true
-            myImageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -100).isActive = true
-            myImageView.widthAnchor.constraint(equalToConstant: 30).isActive = true
-            myImageView.heightAnchor.constraint(equalToConstant: 30).isActive = true
+            myImageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -50).isActive = true
+            myImageView.widthAnchor.constraint(equalToConstant: 35).isActive = true
+            myImageView.heightAnchor.constraint(equalToConstant: 35).isActive = true
 
 
         }
+       
+    }
+    
+    override func layoutIfNeeded() {
+        super.layoutIfNeeded()
         
+        myImageView.layer.cornerRadius = myImageView.frame.width / 2
+        myImageView.layer.masksToBounds = false
+        myImageView.contentMode = .scaleToFill
+        myImageView.clipsToBounds = true
     }
     
     required init?(coder aDecoder: NSCoder) {
